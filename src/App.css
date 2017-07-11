@@ -1,0 +1,187 @@
+body {
+  display: flex;
+  justify-content: center;
+  background: url('https://hdwallsbox.com/wallpapers/l/1920x1080/33/food-fish-cooking-mortar-spices-crayfish-1920x1080-32407.jpg');
+  font-family: 'Kurale', serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  width: 35em;
+  overflow: hidden;
+}
+
+.mainContainer h1 {
+  display: block;
+  color: #DAFFEF;
+}
+
+h2 {
+  margin: 0;
+  margin-left: 5px;
+}
+
+input {
+  font-family: 'Kurale', serif;
+  border-radius: 10px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.recipeContainer {
+  border-top-left-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  top: 20px;
+  height: 30em;
+  width: 20em;
+  background: linear-gradient(
+    45deg,
+    #A3B18A,
+    #3A5A40
+  );
+  box-shadow: 1px 3px 15px 2px #C1BFB5;
+  text-align: center;
+  animation: 2s fadeIn, 2s slideDown;
+}
+
+.mainDisplay {
+  border-top-right-radius: 15px;
+  position: relative;
+  width: 30em;
+  height: 30em;
+  top: 20px;
+  background: linear-gradient(
+    45deg,
+    #FFF,
+    #DAB894 20%
+  );
+  animation: 2s slideRight;
+  box-shadow: 2px 2px 15px 2px #C1BFB5;
+}
+
+.recipe a {
+  height: 3em;
+  border-radius: 10px;
+  margin-top: 3px;
+  background: #CEC2FF;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #3A5A40;
+  font-weight: 500;
+}
+
+.recipe {
+  position: relative;
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+
+.recipeList {
+  animation: 2s fadeIn;
+}
+
+.recipeBox {
+  animation: 2s slideRight;
+}
+
+.recipeName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteRecipe {
+  position: relative;
+  left: 4px;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  color: white;
+  background-color: #3A5A40;
+}
+
+.deleteRecipe:focus {
+  outline: none;
+}
+
+.inputForm {
+  color: #FEFDFF;
+  background: #C1BFB5;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+}
+
+.ingredientInput {
+  height: 2em;
+  width: 60%;
+  margin-left: 10px;
+  margin-top: 10px;
+  background: #CEC2FF;
+  color: black;
+  font-weight: 600;
+  animation: 1s fadeIn;
+}
+
+.ingredientsSubmitButton {
+  width: 10em;
+  height: 3em;
+  margin-top: 10px;
+  margin-left: 10px;
+  background: pink;
+  font-family: cursive;
+  border-radius: 10px;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideDown {
+  from {height: 0;}
+  to {height: 30em;}
+}
+
+@keyframes slideRight {
+  from {width: 0em};
+  to {width: 25em};
+}
+
+@media (max-width: 622px) {
+  .innerContainer {
+    width: 28em;
+  }
+}
+
+@media (max-width: 510px) {
+  .innerContainer {
+    width: 25em;
+  }
+}
+
+@media (max-width: 450px) {
+  .innerContainer {
+    width: 20em;
+  }
+}
