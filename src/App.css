@@ -14,6 +14,8 @@ body {
 }
 
 .mainContainer {
+  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,9 +24,8 @@ body {
 
 .innerContainer {
   position: relative;
-  top: 10px;
   display: flex;
-  height: 20em;
+  height: 30em;
   width: 35em;
   overflow: hidden;
   box-shadow: 1px 3px 12px 1px #C1BFB5;
