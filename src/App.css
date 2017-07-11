@@ -5,9 +5,12 @@ html, body {
 body {
   display: flex;
   justify-content: center;
-  background: url('https://hdwallsbox.com/wallpapers/l/1920x1080/33/food-fish-cooking-mortar-spices-crayfish-1920x1080-32407.jpg');
+  background-image: url("images/cooking-background.jpg");
   font-family: 'Kurale', serif;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  -o-background-size: cover;  
   background-size: cover;
   padding: 0px;
   margin: 0px;
@@ -23,6 +26,7 @@ body {
 }
 
 .innerContainer {
+  border-radius: 10px;
   position: relative;
   display: flex;
   height: 30em;
