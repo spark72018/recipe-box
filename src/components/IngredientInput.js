@@ -47,16 +47,19 @@ export default class IngredientsInputForm extends Component {
         this.setEditedRecipe = this.setEditedRecipe.bind(this);
         this.deleteInput = this.deleteInput.bind(this);
     }
-
+// can't delte after deleting inputs
     deleteInput = (idx, node) => {
         //console.log(node.parentNode.parentNode.childNodes[0]);
         let [...inpNodes] = node.parentNode.parentNode.childNodes;
         let ingNodes = inpNodes.map(node => node.firstChild)
-                               .filter(node => node.className === 'ingredientInput' 
-                                            && node.value != false);
+                               .filter(node => node.className === 'ingredientInput');
         ingNodes.forEach((el) => {
-            if(idx === parseInt(el.id, 10)) {
-                el.parentNode.remove();
+            let [...arr] = el.parentNode.parentNode.childNodes;
+            let arr2 = arr.filter(el => el.id == true || el.id === "0");  
+            if(idx === parseInt(el.id, 10) && arr2.length > 1) {
+                this.setState({
+                    numInputs: --this.state.numInputs
+                }, () => el.parentNode.remove());
             }
         });
     }
