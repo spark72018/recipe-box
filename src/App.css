@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -5,9 +9,8 @@ body {
   font-family: 'Kurale', serif;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0;
-  margin: 0;
-  height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .mainContainer {
@@ -18,9 +21,13 @@ body {
 }
 
 .innerContainer {
+  position: relative;
+  top: 10px;
   display: flex;
+  height: 20em;
   width: 35em;
   overflow: hidden;
+  box-shadow: 1px 3px 12px 1px #C1BFB5;
 }
 
 .mainContainer h1 {
@@ -47,16 +54,13 @@ input:focus{
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 2px;
-  top: 20px;
-  height: 30em;
+  height: 100%;
   width: 20em;
   background: linear-gradient(
     45deg,
     #A3B18A,
     #3A5A40
   );
-  box-shadow: 1px 3px 15px 2px #C1BFB5;
   text-align: center;
   animation: 2s fadeIn, 2s slideDown;
 }
@@ -65,15 +69,13 @@ input:focus{
   border-top-right-radius: 15px;
   position: relative;
   width: 30em;
-  height: 30em;
-  top: 20px;
+  height: 100%;
   background: linear-gradient(
     45deg,
     #FFF,
     #DAB894 20%
   );
   animation: 2s slideRight;
-  box-shadow: 2px 2px 15px 2px #C1BFB5;
 }
 
 .recipe a {
