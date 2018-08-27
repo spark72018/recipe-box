@@ -27,7 +27,7 @@ class App extends Component {
     this.changeInitialRecipe = this.changeInitialRecipe.bind(this);
   }
 
-  setEditedRecipe = (str) => this.setState({editedRecipei: str});
+  setEditedRecipe = (str) => this.setState({editedRecipe: str});
 
   setCurrentRecipe = (str) => this.setState({currentRecipe: str});
 
